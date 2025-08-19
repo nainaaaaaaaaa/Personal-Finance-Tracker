@@ -1,0 +1,50 @@
+Loaded sample data (no saved file found).
+
+Menu: 1)add 2)list 3)search 4)filter>X 5)chart 6)save 0)exit
+Choose: 2
+Sort by (id/date/amount/category): id
+
+ID   Date        Type     Amount      Category     Description
+----------------------------------------------------------------------
+  1  2025-01-03  income   3000.00     Salary       Monthly salary
+  2  2025-01-05  expense     45.20    Groceries    Walmart
+  3  2025-02-12  expense    250.00    Shopping     Jacket
+  4  2025-03-14  expense    600.00    Rent         March rent
+
+Choose: 1
+Date (YYYY-MM-DD): 2025-04-01
+Amount: 120.5
+Category: Dining
+Type (income/expense): expense
+Description: Pizza night
+Added.
+
+Choose: 3
+Keyword: rent
+
+ID   Date        Type     Amount      Category     Description
+----------------------------------------------------------------------
+  4  2025-03-14  expense    600.00    Rent         March rentChoose: 4
+Show expenses over: 200
+
+ID   Date        Type     Amount      Category     Description
+----------------------------------------------------------------------
+  3  2025-02-12  expense    250.00    Shopping     Jacket
+  4  2025-03-14  expense    600.00    Rent         March rent
+
+Choose: 5
+
+Monthly spending chart:
+
+2025-01 | █ 45.20
+2025-02 | ██████████████████████████ 250.00
+2025-03 | █████████████████████████████████████████ 600.00
+2025-04 | █████████ 120.50
+
+Choose: 6
+Saved 5 transactions to transactions.json
+
+Choose: 0
+Save before exit? (y/N): y
+Saved 5 transactions to transactions.json
+Bye.
